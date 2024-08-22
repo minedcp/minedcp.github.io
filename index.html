@@ -30,12 +30,46 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
         }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
     <div class="header">
         <h1>Diego Cruz Pastor</h1>
-        <div class="contact-info">
+        <div id="contact" class="contact-info">
             <p>Email: dcp0612@gmail.com</p>
             <p>Phone: +41 78 647 57 21</p>
             <p>Website: https://minedcp.github.io</p>
@@ -43,12 +77,12 @@
         </div>
     </div>
 
-    <div class="section">
+    <div id="summary" class="section">
         <h2>Summary</h2>
         <p>Experienced in web content managment and IT developpement with a strong background in Hardware IT. Skilled in IT in general and learning cybersecurity. Looking to leverage my expertise in AI developpement at SwissAI.</p>
     </div>
 
-    <div class="section">
+    <div id="experience" class="section">
         <h2>Experience</h2>
         <h3>Help with IT development - Compassion Suisse</h3>
         <p><strong>Yverdons-les-Bains</strong> | <em>Mars 2024 - July 2024</em></p>
@@ -66,14 +100,14 @@
         </ul>
     </div>
 
-    <div class="section">
+    <div id="education" class="section">
         <h2>Education</h2>
         <h3>Bachelor's degree in computer hardware - HEPIA</h3>
         <p><strong>Geneva</strong> | <em>September 2018 - September 2022</em></p>
         <p>Hardware and mobile programming. Digital processing on a computer system. FPGA programming.</p>
     </div>
 
-    <div class="section">
+    <div id="skills" class="section">
         <h2>Skills</h2>
         <ul>
             <li>Multilingual: French, English, Spanish</li>
