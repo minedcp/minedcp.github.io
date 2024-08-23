@@ -211,13 +211,15 @@
         }
 
         footer {
-            background-color: #333;
+            background: url('./backgourndfootertest.png') no-repeat center center;
+            background-size: cover; /* Ensure the image covers the entire footer */
             color: white;
             text-align: center;
             padding: 20px 0;
             position: relative;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
         }
 
         footer p {
@@ -233,12 +235,12 @@
             color: #ff7e5f;
             margin: 0 10px;
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.2em; /* Slightly larger font */
             transition: color 0.3s ease; /* Smooth color transition */
         }
 
         .footer-links a:hover {
-            color: #feb47b;
+            color: #feb47b; /* Lighter shade on hover */
             text-decoration: underline;
         }
 
@@ -343,8 +345,10 @@
         <div class="footer-links">
             <a href="https://github.com/minedcp" target="_blank"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://www.linkedin.com/in/diego-cruz-pastor-41ba6b210" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:dcp0612@gmail.com"><i class="fas fa-envelope"></i> Email</a>
             <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
         </div>
+        <p>Developed with love by Diego Cruz Pastor</p> <!-- A personal touch -->
     </footer>
 
     <script>
