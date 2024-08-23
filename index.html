@@ -191,6 +191,50 @@
         #summary, #experience, #education, #contact {
             color: #333; /* Dark gray text color */
         }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: #ff7e5f;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-links i {
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+            footer {
+                padding: 10px 0;
+            }
+            
+            .footer-links a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -274,5 +318,13 @@
         </form>
     </div>
     
+    <footer>
+        <p>&copy; 2024 iego Cruz Pastor. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/minedcp" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/diego-cruz-pastor-41ba6b210" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+        </div>
+    </footer>    
 </body>
 </html>
