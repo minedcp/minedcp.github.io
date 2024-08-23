@@ -9,6 +9,8 @@
     <style>
         body {
             font-family: 'Roboto', sans-serif;
+            color: #333; /* Darker text color */
+            background-color: #ffffff; /* Light background */
         }
         h1, h2, h3 {
             font-family: 'Roboto', sans-serif;
@@ -213,7 +215,8 @@
         footer {
             background: url('./img/backgourndfootertest.png') no-repeat center center;
             background-size: cover; /* Ensure the image covers the entire footer */
-            color: white;
+            background-color: #000428;
+            color: #f0f0f0; /* Lighter text color for better contrast */
             text-align: center;
             padding: 20px 0;
             position: relative;
@@ -257,20 +260,25 @@
                 margin: 10px 0;
             }
         }
+
+        a:focus, button:focus {
+            outline: 3px solid #ff7e5f; /* Highlight focused links and buttons */
+            outline-offset: 2px;
+        }
     </style>
 </head>
 <body>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
-            <li><a href="#summary">Summary</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#summary" aria-label="Summary Section">Summary</a></li>
+            <li><a href="#experience" aria-label="Experience Section">Experience</a></li>
+            <li><a href="#education" aria-label="Education Section">Education</a></li>
+            <li><a href="#skills" aria-label="Skills Section">Skills</a></li>
+            <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
         </ul>
     </nav>
     
-    <div class="header">
+    <header class="header">
         <h1>Diego Cruz Pastor</h1>
         <div class="contact-info">
             <p>Email: dcp0612@gmail.com</p>
@@ -278,75 +286,77 @@
             <p>Website: https://minedcp.github.io</p>
             <p>LinkedIn: https://www.linkedin.com/in/diego-cruz-pastor-41ba6b210/</p>
         </div>
-    </div>
+    </header>
 
-    <div id="summary" class="section scroll-animation">
-        <h2><i class="fas fa-user"></i> Summary</h2>
-        <p>Experienced in web content managment and IT developpement with a strong background in Hardware IT. Skilled in IT in general and learning cybersecurity. Looking to leverage my expertise in AI developpement at SwissAI.</p>
-    </div>
+    <main>
+        <section id="summary" class="section scroll-animation">
+            <h2><i class="fas fa-user"></i> Summary</h2>
+            <p>Experienced in web content managment and IT developpement with a strong background in Hardware IT. Skilled in IT in general and learning cybersecurity. Looking to leverage my expertise in AI developpement at SwissAI.</p>
+        </section>
 
-    <div id="experience" class="section scroll-animation">
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <h3>Help with IT development - Compassion Suisse</h3>
-        <p><strong>Yverdons-les-Bains</strong> | <em>Mars 2024 - July 2024</em></p>
-        <ul>
-            <li>80% IT development : Creation and modification of various IT infrastructure tools (Web, systeme, ERP, etc.).</li>
-            <li>20% Miscellaneous : Updating the database, entering donations, mail, reports, help at conferences, meetings, etc.</li>
-        </ul>
+        <section id="experience" class="section scroll-animation">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            <h3>Help with IT development - Compassion Suisse</h3>
+            <p><strong>Yverdons-les-Bains</strong> | <em>Mars 2024 - July 2024</em></p>
+            <ul>
+                <li>80% IT development : Creation and modification of various IT infrastructure tools (Web, systeme, ERP, etc.).</li>
+                <li>20% Miscellaneous : Updating the database, entering donations, mail, reports, help at conferences, meetings, etc.</li>
+            </ul>
 
-        <h3>Web content manager (volunteer) - Institut du leadership</h3>
-        <p><strong>Geneva</strong> | <em>June 2024 - Ongoing</em></p>
-        <ul>
-            <li>50% Web content management.</li>
-            <li>50% Web application creation.</li>
-            <li>www.genevalead.ch</li>
-        </ul>
-    </div>
+            <h3>Web content manager (volunteer) - Institut du leadership</h3>
+            <p><strong>Geneva</strong> | <em>June 2024 - Ongoing</em></p>
+            <ul>
+                <li>50% Web content management.</li>
+                <li>50% Web application creation.</li>
+                <li>www.genevalead.ch</li>
+            </ul>
+        </section>
 
-    <div id="education" class="section scroll-animation">
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <h3>Bachelor's degree in computer hardware - HEPIA</h3>
-        <p><strong>Geneva</strong> | <em>September 2018 - September 2022</em></p>
-        <p>Hardware and mobile programming. Digital processing on a computer system. FPGA programming. Basic Software developpement.</p>
-    </div>
+        <section id="education" class="section scroll-animation">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <h3>Bachelor's degree in computer hardware - HEPIA</h3>
+            <p><strong>Geneva</strong> | <em>September 2018 - September 2022</em></p>
+            <p>Hardware and mobile programming. Digital processing on a computer system. FPGA programming. Basic Software developpement.</p>
+        </section>
 
-    <div id="skills" class="section">
-        <h2><i class="fas fa-tools"></i> Skills</h2>
-        <ul>
-            <li>Multilingual: French, English, Spanish</li>
-            <li>Open-mindedness</li>
-            <li>Patience</li>
-            <li>Creative thinking</li>
-            <li>Earning trust</li>
-            <li>Word processing</li>
-            <li>Spreadsheet building</li>
-            <li>Coding, programming, Code-switching</li>
-        </ul>
-    </div>
+        <section id="skills" class="section">
+            <h2><i class="fas fa-tools"></i> Skills</h2>
+            <ul>
+                <li>Multilingual: French, English, Spanish</li>
+                <li>Open-mindedness</li>
+                <li>Patience</li>
+                <li>Creative thinking</li>
+                <li>Earning trust</li>
+                <li>Word processing</li>
+                <li>Spreadsheet building</li>
+                <li>Coding, programming, Code-switching</li>
+            </ul>
+        </section>
 
-    <div id="contact" class="section">
-        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <form action="https://formspree.io/f/myzgnlav" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="_replyto" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </div>
+        <section id="contact" class="section">
+            <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+            <form action="https://formspree.io/f/myzgnlav" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2024 Diego Cruz Pastor. All rights reserved.</p>
         <div class="footer-links">
-            <a href="https://github.com/minedcp" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/diego-cruz-pastor-41ba6b210" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:dcp0612@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="#top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+            <a href="https://github.com/minedcp" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/diego-cruz-pastor-41ba6b210" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:dcp0612@gmail.com" aria-label="Email Address"><i class="fas fa-envelope"></i> Email</a>
+            <a href="#top" aria-label="Go Back to the Top"><i class="fas fa-arrow-up"></i> Back to Top</a>
         </div>
         <p>Developed with love by Diego Cruz Pastor</p> <!-- A personal touch -->
     </footer>
