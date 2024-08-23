@@ -113,6 +113,31 @@
             padding: 20px;
             border-radius: 8px;
         }
+        #experience .job {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #experience .job h3 {
+            flex: 1; /* Job title takes up full width */
+            margin-bottom: 0; /* Remove margin since it's in a row */
+        }
+
+        #experience .job p {
+            flex: 1; /* Job description takes up the other half */
+            margin-left: 20px; /* Add space between title and description */
+            font-style: italic;
+            color: #555;
+        }
+
+        #experience .job ul {
+            margin: 0;
+            padding: 0 20px;
+            list-style-type: disc;
+        }
+
         #summary {
             background: linear-gradient(to right, #ff7e5f, #feb47b); /* Orange to pink gradient */
             padding: 20px;
@@ -123,12 +148,41 @@
             padding: 20px;
             border-radius: 8px;
         }
+        #education .degree {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        #education .degree h3 {
+            flex: 1;
+        }
+
+        #education .degree p {
+            flex: 1;
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
         #skills {
             background: linear-gradient(to right, #000428, #004e92); /* Dark blue gradient */
             color: white; /* White text color */
             padding: 20px;
             border-radius: 8px;
         }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            justify-content: space-between; /* Distribute items evenly */
+        }
+
+        #skills ul li {
+            flex: 0 1 45%; /* Each item takes up 45% of the row */
+            margin-bottom: 10px;
+        }
+
         #contact {
             background-color: #ffe6f7; /* Light pink */
             padding: 20px;
