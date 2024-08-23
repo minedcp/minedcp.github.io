@@ -1,0 +1,272 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333; /* Darker text color */
+    background-color: #ffffff; /* Light background */
+}
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Bold for headers */
+}
+h1 {
+    font-size: 2.5em; /* Larger size for main headers */
+}
+h2 {
+    font-size: 2em; /* Slightly smaller for subheaders */
+}
+p, li, a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Regular weight for body text */
+    font-size: 1em; /* Standard size for body text */
+}
+.header, .section {
+    margin-bottom: 20px;
+}
+.header {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.contact-info {
+    margin-bottom: 10px;
+}
+.contact-info p {
+    margin: 0;
+}
+.section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+nav ul li a:hover {
+    background-color: #ff7e5f; /* Background color on hover */
+    color: white; /* Keep text color white on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #333; /* Initial background color */
+    color: white; /* Initial text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #feb47b; /* Background color on hover */
+    color: #333; /* Darker text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scroll-animation {
+    opacity: 0; /* Start invisible */
+    animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+}
+
+h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+#experience {
+    background: linear-gradient(to right, #43cea2, #185a9d); /* Green to blue gradient */
+    padding: 20px;
+    border-radius: 8px;
+}
+#experience .job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#experience .job h3 {
+    flex: 1; /* Job title takes up full width */
+    margin-bottom: 0; /* Remove margin since it's in a row */
+}
+
+#experience .job p {
+    flex: 1; /* Job description takes up the other half */
+    margin-left: 20px; /* Add space between title and description */
+    font-style: italic;
+    color: #555;
+}
+
+#experience .job ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: disc;
+}
+
+#summary {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Orange to pink gradient */
+    padding: 20px;
+    border-radius: 8px;
+}
+#education {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Pink to peach gradient */
+    padding: 20px;
+    border-radius: 8px;
+}
+#education .degree {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#education .degree h3 {
+    flex: 1;
+}
+
+#education .degree p {
+    flex: 1;
+    margin-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+#skills {
+    background: linear-gradient(to right, #000428, #004e92); /* Dark blue gradient */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 8px;
+}
+#skills ul {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+#skills ul li {
+    flex: 0 1 45%; /* Each item takes up 45% of the row */
+    margin-bottom: 10px;
+}
+
+#contact {
+    background-color: #ffe6f7; /* Light pink */
+    padding: 20px;
+    border-radius: 8px;
+}
+#summary, #experience, #education, #contact {
+    color: #333; /* Dark gray text color */
+}
+
+footer {
+    background: url('./img/backgourndfootertest.png') no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire footer */
+    background-color: #000428;
+    color: #f0f0f0; /* Lighter text color for better contrast */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ff7e5f;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em; /* Slightly larger font */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.footer-links a:hover {
+    color: #feb47b; /* Lighter shade on hover */
+    text-decoration: underline;
+}
+
+.footer-links i {
+    margin-right: 5px;
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0;
+    }
+    
+    .footer-links a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+a:focus, button:focus {
+    outline: 3px solid #ff7e5f; /* Highlight focused links and buttons */
+    outline-offset: 2px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #a06759;
+}
